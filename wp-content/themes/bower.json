@@ -1,0 +1,25 @@
+{
+  "name": "suslik",
+  "description": "site for cats",
+  "main": "",
+  "authors": [
+    "Alexander Dolgan"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "blog"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}

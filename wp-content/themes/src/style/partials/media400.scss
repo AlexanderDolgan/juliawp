@@ -1,0 +1,30 @@
+@media (max-width: 400px) {
+  .logo {
+    float: none;
+  }
+  .site-nav {
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .main-article {
+    padding: 0 45px;
+  }
+
+  .main-article-liveacomment {
+    float: left;
+    clear: both;
+    line-height: 4;
+  }
+
+  .right-bar-photo-per-in a:first-child,
+  .right-bar-photo-in a:first-child, {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
+  .archive-header {
+    margin-top: 0;
+  }
+
+}

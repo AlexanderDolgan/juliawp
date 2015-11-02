@@ -1,0 +1,34 @@
+@media (max-width: 967px) {
+  body {
+  }
+  //header
+  .site-header > .row {
+    text-align: center;
+  }
+
+  .site-nav {
+  }
+
+  .logo > img {
+    width: 275px;
+    margin-top: 25px;
+  }
+
+  .main-article {
+    padding: 0 45px;
+  }
+
+  .archive-header {
+    margin-top: 10px;
+  }
+
+  .right-bar {
+    margin-top: 10px;
+  }
+
+  .right-bar-photo-per-in a:first-child,
+  .right-bar-photo-in a:first-child, {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+}
