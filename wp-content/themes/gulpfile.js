@@ -43,12 +43,16 @@ var path = {
 };
 
 var config = {
-    server: {
-        baseDir: "./juliatheme"
-    },
-    tunnel: true,
-    host: 'localhost',
-    port: 9000,
+    //server: {
+    //    baseDir: "./juliatheme"
+    //},
+    //tunnel: true,
+    //host: 'localhost',
+
+    //port: 9000,
+
+    //MAMP config
+    proxy: "localhost:8888",
     logPrefix: "cats"
 };
 
