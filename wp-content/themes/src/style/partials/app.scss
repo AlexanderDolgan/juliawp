@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Montserrat-regular';
-  src: url('../fonts/montserrat-regular.otf');
-  //font-family: 'Montserrat-bold';
-  //src: url('../fonts/montserrat-bold.otf');
-  //font-family: 'Montserrat-light';
-  //src: url('../fonts/montserrat-light.otf');
+  src: url('../fonts/Montserrat-Regular.otf');
+  font-family: 'Montserrat-bold';
+  src: url('../fonts/montserrat-bold.otf');
+  font-family: 'Montserrat-light';
+  src: url('../fonts/montserrat-light.otf');
 }
 
 $font-mon-r: "Montserrat-regular", Helvetica, Sans-Serif;
-//$font-mon-b: "Montserrat-bold", Helvetica, Sans-Serif;
-//$font-mon-l: "Montserrat-light", Helvetica, Sans-Serif;
+$font-mon-b: "Montserrat-bold", Helvetica, Sans-Serif;
+$font-mon-l: "Montserrat-light", Helvetica, Sans-Serif;
 
 $font-serif-main: "Book Antiqua", Georgia, Serif;
 $font-serif-sec: "Georgia", Book Antiqua, Serif;
@@ -60,11 +60,12 @@ p, pre {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1000px;
 }
 
 .col-md-10 {
-  padding: 0 35px 0 0;
+  padding: 0;
+  max-width: 770px;
 }
 
 //////////////////////////////////////site-header
@@ -144,15 +145,14 @@ p, pre {
 
 .main-article-content-img {
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  margin-left: -4px;
+  margin-top: 3px;
   font-size: 0;
 }
 
-.main-article-content-img:nth-child(odd) {
-  margin-left: -4px;
-}
-
 .main-article-footer {
+  font-family: $font-mon-r;
   padding-top: 15px;
   font-size: .9em;
 }
@@ -208,11 +208,15 @@ p, pre {
 ////////////////////////////////////side-bar
 .right-bar {
   margin-top: 80px;
+  margin-left: 55px;
   padding: 0;
   text-align: center;
+  font-family: $font-mon-r;
 }
 
 .right-bar-cat-name {
+  font-family: $font-mon-l;
+  font-size: .9em;
   line-height: 2;
 }
 
@@ -246,7 +250,7 @@ p, pre {
 
 .right-bar-photo-in img:hover,
 .right-bar-photo-in img:focus, {
-  filter: saturate(1.5);
+  filter: contrast(110%);
 }
 
 .right-bar-photo-per-in {
@@ -256,7 +260,7 @@ p, pre {
 
 .right-bar-photo-per-in img:hover,
 .right-bar-photo-per-in img:focus, {
-  filter: saturate(1.5);
+  filter: contrast(110%);
 }
 
 .right-bar-photo-per-in a {
@@ -319,6 +323,7 @@ p, pre {
 
 //////////////////////////////////////archive
 .archive {
+  font-family: $font-mon-l;
   text-align: center;
 }
 
@@ -339,7 +344,7 @@ p, pre {
 .archive-item {
   display: inline-block;
   margin-top: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .archive-item h3 {
@@ -406,6 +411,7 @@ p, pre {
 
 //////////////////////////////////////footer
 .site-footer {
+  font-family: $font-mon-l;
   text-align: center;
   margin-top: 90px;
 }

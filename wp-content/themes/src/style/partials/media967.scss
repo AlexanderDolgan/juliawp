@@ -5,15 +5,21 @@
   .site-header > .row {
     text-align: center;
   }
-
   .site-nav {
+  }
+
+  .site-nav>li {
+    width: 65px;
+    font-size: .85em;
   }
 
   .logo > img {
     width: 275px;
     margin-top: 25px;
   }
-
+  .col-md-10, .col-md-2 {
+    padding-right: 0;
+  }
   .main-article {
     padding: 0 45px;
   }
@@ -24,6 +30,7 @@
 
   .right-bar {
     margin-top: 10px;
+    margin-left: 0;
   }
 
   .right-bar-photo-per-in a:first-child,

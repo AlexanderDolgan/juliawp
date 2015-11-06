@@ -16,3 +16,17 @@
 
 </head>
 <body <?php body_class(); ?>>
+
+<div class="container">
+    <header class="row site-header">
+        <nav class="header-nav">
+            <a href="<?php echo get_home_url(); ?>" class="logo"><img src="<?php bloginfo('template_directory')?>/img/assets/logo.jpg" alt="logo"></a>
+            <ul class="site-nav">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="<?php echo get_home_url(); ?>" class="blog-btn"></a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
