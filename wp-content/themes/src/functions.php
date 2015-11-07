@@ -74,7 +74,7 @@ remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'generator');
 remove_action('wp_head', 'wlwmanifest_link');
 
-remove_filter('term_description','wpautop'); //echo the string with <p> tags around the paragraphs
+//remove_filter('term_description','wpautop'); //echo the string with <p> tags around the paragraphs
 remove_filter ('the_content',  'wpautop');
 remove_filter ('comment_text', 'wpautop');
 
