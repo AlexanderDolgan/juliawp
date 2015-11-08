@@ -1,7 +1,8 @@
 <section class="right-bar col-md-2">
 	<div class="right-bar-cat">
-		<p class="Categories"></p>
 
+<!--		Categories -->
+		<p class="Categories"></p>
 		<ul class="right-bar-cat-name">
 			<?php
 			$args = array(
@@ -34,13 +35,14 @@
 			?>
 		</ul>
 	</div>
-
+	<?php dynamic_sidebar('sidebar1'); ?>
+<!--Follow me Social links-->
 	<div class="right-bar-fol">
 		<p class="follow-me"></p>
 		<ul class="right-bar-social-links">
-			<li><a href="//instagram.com" class="instagram-normal" target="_blank"></a></li>
-			<li><a href="//facebook.com" class="facebook-normal" target="_blank"></a></li>
-			<li><a href="//vk.com" class="vk-normal" target="_blank"></a></li>
+			<li><a href="//instagram.com/julia_kaptelova/" class="instagram-normal" target="_blank"></a></li>
+			<li><a href="//www.facebook.com/juliakaptelova.photography" class="facebook-normal" target="_blank"></a></li>
+			<li><a href="//vk.com/juliakaptelovaphotography" class="vk-normal" target="_blank"></a></li>
 		</ul>
 	</div>
 
