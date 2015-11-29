@@ -28,9 +28,8 @@
         <ul class="main-article-social-icon">
             <li><a href="#" class="fb-like"></a></li>
             <li>SHARE:</li>
-            <li><a href="//facebook.com" class="facebook-normal" target="_blank"></a></li>
-            <li><a href="//vk.com" class="vk-normal" target="_blank"></a></li>
-            <li><a href="//pinterest.com" class="pi-normal" target="_blank"></a></li>
+            <li><a href="//facebook.com" class="fb-n" target="_blank"></a></li>
+            <li><a href="//vk.com" class="vk-n" target="_blank"></a></li>
         </ul>
         <a href="#" class="main-article-liveacomment">LIVE A COMMENT</a>
 

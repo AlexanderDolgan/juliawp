@@ -69,7 +69,7 @@ p, pre {
   width: 77%;
 }
 
-//////////////////////////////////////site-header
+//site-header
 .site-header {
   height: 200px;
   padding-top: 10%;
@@ -112,7 +112,7 @@ p, pre {
 }
 
 
-//////////////////////////////////////site main
+//site main
 .site-main {
   margin-top: 20px;
 }
@@ -121,8 +121,27 @@ p, pre {
   margin-top: 30px;
 }
 
+.main-article a {
+  color: $gold-color;
+}
+
+.main-article a:hover,
+.main-article a:active, {
+  color: darken($gold-color, 15);
+}
+
 .main-article-header {
   text-align: center;
+}
+
+article:nth-of-type(n+2)::before{
+  content: '';
+  background: url("../img/assets/sprites.png") no-repeat;
+  background-position: -210px -42px ;
+  display: block;
+  margin: 10px auto;
+  width: 55px;
+  height: 36px;
 }
 
 .main-article-header-h1 {
@@ -196,6 +215,9 @@ p, pre {
 .nav-buttons {
   margin-top: 20px;
   clear: both;
+  ul{
+    list-style: none;
+  }
 }
 
 .nav-buttons::after {
@@ -206,7 +228,7 @@ p, pre {
   height: 60px;
 }
 
-////////////////////////////////////side-bar
+//side-bar
 .right-bar {
   margin-top: 80px;
   margin-left: 55px;
@@ -233,10 +255,11 @@ p, pre {
 
 .right-bar-social-links > li {
   display: inline-block;
+  margin-left: 5px;
 }
 
 .right-bar-photo-in {
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: 500;
 }
 
@@ -256,7 +279,7 @@ p, pre {
 }
 
 .right-bar-photo-per-in {
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: 500;
 }
 
@@ -293,7 +316,7 @@ p, pre {
   content: '';
   position: absolute;
   background: url("../img/assets/sprites.png") no-repeat;
-  background-position: -212px -215px;
+  background-position: -201px -202px;
   width: 26px;
   height: 20px;
   margin-left: 5px;
@@ -323,7 +346,7 @@ p, pre {
   outline: 0;
 }
 
-//////////////////////////////////////archive
+//archive
 .archive {
   font-family: $font-mon-l;
   text-align: center;
@@ -386,11 +409,11 @@ p, pre {
 }
 
 .nav-buttons .newer::before {
-  content: " ";
+  content: "";
   display: inline-block;
   margin-right: 5px;
   background-image: url("../img/assets/sprites.png");
-  background-position: -319px -71px;
+  background-position: -308px -59px ;
   width: 9px;
   height: 7px;
 }
@@ -406,14 +429,25 @@ p, pre {
 }
 
 .nav-buttons .older::after {
-  content: " ";
+  content: "";
   display: inline-block;
   margin-left: 5px;
   background-image: url("../img/assets/sprites.png");
-  background-position: -369px -71px;
+  background-position: -358px -59px ;
   width: 9px;
   height: 7px;
 }
+
+.nav-buttons .older-posts-img::after {
+  content: "";
+  display: inline-block;
+  margin: 0 5px -16px 7px;
+  background-image: url("../img/assets/sprites.png");
+  background-position: -266px -143px ;
+  width: 107px;
+  height: 39px;
+}
+
 
 //////////////////////////////////////footer
 .site-footer {
@@ -439,156 +473,148 @@ p, pre {
 .top,
 .arrow-right,
 .arrow-left,
-.pi-mouse-down,
-.pi-normal,
-.posts,
 .also,
-.leaf,
 .envelop,
-.blog-btn,
+.blog-pic,
 .elem-1,
 .follow-me,
 .search,
 .Categories,
-.facebook-mouse-down,
-.facebook-normal,
-.instagram-mouse-down,
-.instagram-normal,
-.vk-mouse-down,
-.vk-normal {
+.vk-h,
+.vk-n,
+.fb-h,
+.fb-n,
+.ins-n,
+.ins-h,
+.About_button,
+.Gallery_button,
+.Contact_button {
   background: url("../img/assets/sprites.png") no-repeat;
   display: block;
   transition: none;
 }
 
-.top-hower {
-  background-position: -324px -109px;
+.top-hower{
+  background-position: -313px -96px ;
   width: 63px;
   height: 33px;
 }
 
-.top {
-  background-position: -226px -110px;
+.top{
+  background-position: -215px -97px ;
   width: 63px;
   height: 33px;
 }
 
-.arrow-right {
-  background-position: -369px -71px;
+.arrow-right{
+  background-position: -358px -58px ;
   width: 9px;
   height: 7px;
 }
 
-.arrow-left {
-  background-position: -319px -71px;
+.arrow-left{
+  background-position: -308px -58px ;
   width: 9px;
   height: 7px;
 }
 
-.pi-normal:hover,
-.pi-normal:focus {
-  background-position: -365px -13px;
-  width: 25px;
-  height: 23px;
-}
-
-.pi-normal {
-  background-position: -313px -13px;
-  width: 25px;
-  height: 23px;
-}
-
-.posts {
-  background-position: -277px -156px;
-  width: 107px;
-  height: 39px;
-}
-
-.also {
-  background-position: -170px -156px;
+.also{
+  background-position: -159px -145px ;
   width: 77px;
-  height: 40px;
+  height: 32px;
 }
 
-.leaf {
-  background-position: -221px -55px;
-  width: 55px;
-  height: 36px;
-}
-
-.envelop {
-  background-position: -212px -215px;
+.envelop{
+  background-position: -201px -202px ;
   width: 26px;
   height: 20px;
 }
 
-.blog-btn {
-  background-position: -114px -206px;
+.blog-pic{
+  background-position: -103px -193px ;
   width: 76px;
   height: 39px;
 }
 
-.elem-1 {
-  background-position: -11px -205px;
-  width: 96px;
+.blog-pic:hover{
+  filter: contrast(130%);
+}
+
+.elem-1{
+  background-position: -7px -192px;
+  width: 82px;
   height: 39px;
 }
 
-.follow-me {
-  background-position: -29px -96px;
-  width: 185px;
-  height: 61px;
-  margin: 0 auto;
+.follow-me{
+  background-position: -7px -82px ;
+  width: 178px;
+  height: 47px;
 }
 
-.search {
-  background-position: -26px -160px;
+.search{
+  background-position: -15px -147px ;
   width: 108px;
   height: 23px;
 }
 
-.Categories {
-  background-position: -19px -46px;
+.Categories{
+  background-position: -8px -33px ;
   width: 170px;
-  height: 54px;
-  margin: 0 auto;
+  height: 52px;
 }
 
-.facebook-normal:hover,
-.facebook-normal:focus, {
-  background-position: -260px -14px;
-  width: 25px;
-  height: 23px;
+.vk-n:hover, .vk-n:focus,{
+  background-position: -51px -1px ;
+  width: 22px;
+  height: 22px;
 }
 
-.facebook-normal {
-  background-position: -212px -13px;
-  width: 25px;
-  height: 23px;
+.vk-n{
+  background-position: -1px -1px ;
+  width: 22px;
+  height: 22px;
 }
 
-.instagram-normal:hover,
-.instagram-normal:focus {
-  background-position: -162px -14px;
-  width: 25px;
-  height: 23px;
+.fb-n:hover, .fb-n:focus,{
+  background-position: -251px -1px ;
+  width: 22px;
+  height: 22px;
 }
 
-.instagram-normal {
-  background-position: -112px -14px;
-  width: 25px;
-  height: 23px;
+.fb-n{
+  background-position: -201px -1px ;
+  width: 22px;
+  height: 22px;
 }
 
-.vk-normal:hover,
-.vk-normal:focus {
-  background-position: -62px -13px;
-  width: 25px;
-  height: 23px;
+.ins-n{
+  background-position: -101px -1px ;
+  width: 22px;
+  height: 22px;
 }
 
-.vk-normal {
-  background-position: -12px -13px;
-  width: 25px;
-  height: 23px;
+.ins-n:hover, .ins-n:focus,{
+  background-position: -151px -1px ;
+  width: 22px;
+  height: 22px;
 }
+
+.About_button{
+  background-position: -306px -14px ;
+  width: 85px;
+  height: 22px;
+}
+
+.Gallery_button{
+  background-position: -176px -256px ;
+  width: 104px;
+  height: 37px;
+}
+
+.Contact_button{
+  background-position: -24px -262px ;
+  width: 109px;
+  height: 22px;
+}
+

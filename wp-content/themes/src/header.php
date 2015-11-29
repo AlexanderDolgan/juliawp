@@ -24,7 +24,7 @@
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="<?php echo get_home_url(); ?>" class="blog-btn"></a></li>
+                <li><a href="<?php echo get_home_url(); ?>" class="blog-pic"></a></li>
             </ul>
         </nav>
     </header>

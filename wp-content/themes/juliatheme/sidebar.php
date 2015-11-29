@@ -40,20 +40,20 @@
 	<div class="right-bar-fol">
 		<p class="follow-me"></p>
 		<ul class="right-bar-social-links">
-			<li><a href="//instagram.com/julia_kaptelova/" class="instagram-normal" target="_blank"></a></li>
-			<li><a href="//www.facebook.com/juliakaptelova.photography" class="facebook-normal" target="_blank"></a></li>
-			<li><a href="//vk.com/juliakaptelovaphotography" class="vk-normal" target="_blank"></a></li>
+			<li><a href="//www.instagram.com/juliakaptelova_photography/" class="ins-n" target="_blank"></a></li>
+			<li><a href="//www.facebook.com/juliakaptelova.photography" class="fb-n" target="_blank"></a></li>
+			<li><a href="//vk.com/juliakaptelovaphotography" class="vk-n" target="_blank"></a></li>
 		</ul>
 	</div>
 
 	<div class="right-bar-photo-in">
-		<a href="#">PHOTOGRAPHY INSTAGRAM</a>
-		<a href="#"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst.jpg" alt="inst-1"></a>
+		<a href="//www.instagram.com/juliakaptelova_photography/">PHOTOGRAPHY INSTAGRAM</a>
+		<a href="//www.instagram.com/juliakaptelova_photography/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst.jpg" alt="inst-1"></a>
 	</div>
 
 	<div class="right-bar-photo-per-in">
-		<a href="#" class="elem-2">PERSONAL INSTAGRAM</a>
-		<a href="#"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg" alt="inst-2"></a>
+		<a href="//www.instagram.com/julia_kaptelova/" class="elem-2">PERSONAL INSTAGRAM</a>
+		<a href="//www.instagram.com/julia_kaptelova/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg" alt="inst-2"></a>
 	</div>
 
 	<div>

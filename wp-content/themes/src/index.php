@@ -5,7 +5,9 @@
 		<!--article-->
 		<div class="row">
 			<div class="left-side col-md-10">
-			<?php if ( have_posts() ) :
+			<?php
+
+			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 					get_template_part( 'content', get_post_format() );
 
@@ -49,8 +51,10 @@
 					</div>
 
 					<nav class="nav-buttons">
-						<a href="#" class="newer">NEWER</a>
-						<a href="#" class="older">OLDER</a>
+						<ul>
+							<li><?php previous_posts_link('<span class="newer">NEWER</span>'); ?></li>
+							<li> <?php next_posts_link('<span class="older">OLDER<span class="older-posts-img"></span></span>'); ?></li>
+						</ul>
 					</nav>
 					<div class="article-bot-border2"></div>
 				</section>
