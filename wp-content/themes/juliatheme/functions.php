@@ -72,6 +72,10 @@ if ( function_exists( 'add_theme_support' ) ) {
 // add featured image support
 add_theme_support( 'post-thumbnails' );
 
+//add search form support
+
+add_theme_support( 'html5', array( 'search-form' ) );
+
 // add Widget Locations
 
 function add_Widgets_Init() {

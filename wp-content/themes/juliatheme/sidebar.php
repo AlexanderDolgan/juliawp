@@ -1,7 +1,7 @@
 <section class="right-bar col-md-2">
 	<div class="right-bar-cat">
 
-<!--		Categories -->
+		<!--		Categories -->
 		<p class="Categories"></p>
 		<ul class="right-bar-cat-name">
 			<?php
@@ -35,8 +35,8 @@
 			?>
 		</ul>
 	</div>
-	<?php dynamic_sidebar('sidebar1'); ?>
-<!--Follow me Social links-->
+	<?php dynamic_sidebar( 'sidebar1' ); ?>
+	<!--Follow me Social links-->
 	<div class="right-bar-fol">
 		<p class="follow-me"></p>
 		<ul class="right-bar-social-links">
@@ -48,23 +48,20 @@
 
 	<div class="right-bar-photo-in">
 		<a href="//www.instagram.com/juliakaptelova_photography/">PHOTOGRAPHY INSTAGRAM</a>
-		<a href="//www.instagram.com/juliakaptelova_photography/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst.jpg" alt="inst-1"></a>
+		<a href="//www.instagram.com/juliakaptelova_photography/"><img
+				src="<?php bloginfo( 'template_directory' ) ?>/img/inst.jpg" alt="inst-1"></a>
 	</div>
 
 	<div class="right-bar-photo-per-in">
 		<a href="//www.instagram.com/julia_kaptelova/" class="elem-2">PERSONAL INSTAGRAM</a>
-		<a href="//www.instagram.com/julia_kaptelova/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg" alt="inst-2"></a>
+		<a href="//www.instagram.com/julia_kaptelova/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg"
+		                                                    alt="inst-2"></a>
 	</div>
 
 	<div>
 		<a href="mailto:julia.kaptelova@gmail.com" class="right-bar-contact" target="_blank">CONTACT ME</a>
 	</div>
-
-	<div>
-		<p href="#" class="right-bar-search search"></p>
-		<input type="text" class="right-bar-search-input">
-
-		<p href="#" class="elem-1"></p>
-	</div>
-
+	<?php
+		get_template_part( 'searchform', 'none' );
+	?>
 </section>
