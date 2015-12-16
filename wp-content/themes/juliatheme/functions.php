@@ -64,17 +64,15 @@ function show_the_content_by_id_with_title( $post_id = 0, $more_link_text = null
 
 /*Add theme support- theme format*/
 
-if ( function_exists( 'add_theme_support' ) ) {
+function custom_theme_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'quote' ) );
-
+	// add featured image support
+	add_theme_support( 'post-thumbnails' );
+	//add search form support
+	add_theme_support( 'html5', array( 'search-form' ) );
 }
+add_action( 'after_setup_theme', 'custom_theme_setup' );
 
-// add featured image support
-add_theme_support( 'post-thumbnails' );
-
-//add search form support
-
-add_theme_support( 'html5', array( 'search-form' ) );
 
 // add Widget Locations
 

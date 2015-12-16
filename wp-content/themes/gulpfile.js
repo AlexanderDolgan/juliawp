@@ -70,9 +70,9 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js)
         .pipe(plumber()) //ошибки
         .pipe(rigger()) 
-        // .pipe(sourcemaps.init()) 
+        .pipe(sourcemaps.init())
         .pipe(uglify()) 
-        // .pipe(sourcemaps.write()) 
+        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest(path.juliatheme.js))
         .pipe(reload({stream: true}));
 });
@@ -80,12 +80,12 @@ gulp.task('js:build', function () {
 //таск для сборки css
 gulp.task('style:build', function () {
     gulp.src(path.src.style) //Выберем наш main.scss
-        // .pipe(sourcemaps.init()) //То же самое что и с js
+        .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(plumber()) //ошибки
         .pipe(sass()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
-        // .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest(path.juliatheme.css)) //И в build
         .pipe(reload({stream: true}));
 });

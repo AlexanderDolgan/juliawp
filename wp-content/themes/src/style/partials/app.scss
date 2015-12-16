@@ -89,7 +89,7 @@ p, pre {
   text-align: center;
 }
 
-.header-nav {
+.header-nav{
 }
 
 .site-nav {
@@ -121,7 +121,7 @@ p, pre {
   margin-top: 30px;
 }
 
-.main-article a {
+.main-article pre a {
   color: $gold-color;
 }
 
@@ -189,7 +189,7 @@ article:nth-of-type(n+2)::before{
 
 .fb-like {
   display: block;
-  background: url("../img/assets/fb-like.png") no-repeat;
+  //background: url("../img/assets/fb-like.png") no-repeat;
   width: 100px;
   height: 20px;
 }
@@ -230,7 +230,7 @@ article:nth-of-type(n+2)::before{
 
 //side-bar
 .right-bar {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 55px;
   padding: 0;
   text-align: center;
@@ -265,6 +265,7 @@ article:nth-of-type(n+2)::before{
 
 .right-bar-photo-in a {
   display: block;
+  font-size: .9em;
 }
 
 .right-bar-photo-in img {
@@ -290,6 +291,7 @@ article:nth-of-type(n+2)::before{
 
 .right-bar-photo-per-in a {
   display: block;
+  font-size: .9em;
 }
 
 .right-bar-photo-per-in a:first-child {
@@ -298,7 +300,7 @@ article:nth-of-type(n+2)::before{
 
 .elem-2 {
   background: url("../img/assets/elem-2.png") no-repeat;
-  background-position: 13px 8px;
+  background-position: 13px 6px;
 }
 
 .right-bar-photo-per-in img {
@@ -310,6 +312,7 @@ article:nth-of-type(n+2)::before{
   margin: 30px 0 0 -20px;
   line-height: 1.5;
   font-weight: 500;
+  font-size: .9em;
 }
 
 .right-bar-contact::after {
@@ -347,12 +350,12 @@ article:nth-of-type(n+2)::before{
 }
 
 //archive
-.archive {
+.also-like {
   font-family: $font-mon-l;
   text-align: center;
 }
 
-.archive-header {
+.also-like-header {
   margin-top: -45px;
   font-family: $font-mon-r;
   color: $gold-color;
@@ -361,38 +364,40 @@ article:nth-of-type(n+2)::before{
   font-size: .95em;
 }
 
-.archive-header > li {
+.also-like-header > li {
   display: inline-block;
   vertical-align: middle;
 }
 
-.archive-item {
+.also-like-item {
   display: inline-block;
   margin-top: 20px;
   margin-right: 15px;
 }
 
-.archive-item:last-child {
+.also-like-content > div:last-child {
   margin-right: 0px;
 }
 
-.archive-item h3 {
+.also-like-item h3 {
   font-size: .8em;
   font-weight: 400;
   line-height: 3;
   text-align: center;
 }
 
-.archive-item img {
+.also-like-item img {
   filter: gray;
   filter: grayscale(100%);
 }
 
-.archive-item img:hover {
+.also-like-item a:hover img,
+.also-like-item img:hover {
   filter: color;
   filter: grayscale(0%);
 }
 
+// newer & older navigation buttons
 .nav-buttons {
   line-height: 4;
   font-weight: 500;
@@ -401,6 +406,7 @@ article:nth-of-type(n+2)::before{
 .nav-buttons .newer {
   float: left;
   color: $gold-color;
+  font-size: .9em;
 }
 
 .nav-buttons .newer:hover,
@@ -421,6 +427,7 @@ article:nth-of-type(n+2)::before{
 .nav-buttons .older {
   float: right;
   color: $gold-color;
+  font-size: .9em;
 }
 
 .nav-buttons .older:hover,
@@ -438,7 +445,7 @@ article:nth-of-type(n+2)::before{
   height: 7px;
 }
 
-.nav-buttons .older-posts-img::after {
+.nav-buttons .posts-img::after {
   content: "";
   display: inline-block;
   margin: 0 5px -16px 7px;
@@ -447,7 +454,6 @@ article:nth-of-type(n+2)::before{
   width: 107px;
   height: 39px;
 }
-
 
 //////////////////////////////////////footer
 .site-footer {
@@ -478,7 +484,7 @@ article:nth-of-type(n+2)::before{
 .blog-pic,
 .elem-1,
 .follow-me,
-.search,
+.search-img,
 .Categories,
 .vk-h,
 .vk-n,
@@ -552,7 +558,7 @@ article:nth-of-type(n+2)::before{
   height: 47px;
 }
 
-.search{
+.search-img{
   background-position: -15px -147px ;
   width: 108px;
   height: 23px;
@@ -618,3 +624,11 @@ article:nth-of-type(n+2)::before{
   height: 22px;
 }
 
+// comments on single post page
+
+.comments {
+  margin-top: 40px;
+}
+
+.tab-conversation, .tab-community, .user-menu, .notification-menu, .comment-count{
+  display: none;}

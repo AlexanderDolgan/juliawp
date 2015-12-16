@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="right-bar-photo-per-in">
-		<a href="//www.instagram.com/julia_kaptelova/" class="elem-2">PERSONAL INSTAGRAM</a>
+		<a href="//www.instagram.com/julia_kaptelova/" class="elem-2">PERSONAL<br>INSTAGRAM</a>
 		<a href="//www.instagram.com/julia_kaptelova/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg"
 		                                                    alt="inst-2"></a>
 	</div>
@@ -61,7 +61,13 @@
 	<div>
 		<a href="mailto:julia.kaptelova@gmail.com" class="right-bar-contact" target="_blank">CONTACT ME</a>
 	</div>
-	<?php
-		get_template_part( 'searchform', 'none' );
-	?>
+	<div>
+		<p class="right-bar-search search-img" ></p>
+		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+			<label>
+				<input type="search" class="right-bar-search-input" placeholder="<?php echo esc_attr_x( '', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+			</label>
+			<p href="#" class="elem-1"></p>
+		</form>
+	</div>
 </section>
