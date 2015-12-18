@@ -48,14 +48,12 @@
 
 	<div class="right-bar-photo-in">
 		<a href="//www.instagram.com/juliakaptelova_photography/">PHOTOGRAPHY INSTAGRAM</a>
-		<a href="//www.instagram.com/juliakaptelova_photography/"><img
-				src="<?php bloginfo( 'template_directory' ) ?>/img/inst.jpg" alt="inst-1"></a>
+		<a href="//www.instagram.com/juliakaptelova_photography/"><?php echo do_shortcode("[instagram-feed]"); ?></a>
 	</div>
 
 	<div class="right-bar-photo-per-in">
 		<a href="//www.instagram.com/julia_kaptelova/" class="elem-2">PERSONAL<br>INSTAGRAM</a>
-		<a href="//www.instagram.com/julia_kaptelova/"><img src="<?php bloginfo( 'template_directory' ) ?>/img/inst-2.jpg"
-		                                                    alt="inst-2"></a>
+		<a href="//www.instagram.com/julia_kaptelova/"><?php echo do_shortcode("[instagram-feed]"); ?></a>
 	</div>
 
 	<div>

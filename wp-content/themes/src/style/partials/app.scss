@@ -34,7 +34,7 @@ ul {
 
 a {
   color: $text-color;
-  transition: all 0.33s ease;
+    transition: all 0.33s ease;
 }
 
 a:hover, a:focus {
@@ -263,15 +263,15 @@ article:nth-of-type(n+2)::before{
   font-weight: 500;
 }
 
-.right-bar-photo-in a {
+.right-bar-photo-in > a {
   display: block;
   font-size: .9em;
+  margin-bottom: 15px;
 }
 
 .right-bar-photo-in img {
   margin-top: 15px;
   overflow: hidden;
-
 }
 
 .right-bar-photo-in img:hover,
@@ -296,6 +296,7 @@ article:nth-of-type(n+2)::before{
 
 .right-bar-photo-per-in a:first-child {
   padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 .elem-2 {
