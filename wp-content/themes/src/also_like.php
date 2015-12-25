@@ -24,7 +24,7 @@
 			while ( $also_like->have_posts() ) {
 				$also_like->the_post(); ?>
 				<div class="also-like-item">
-					<a href="<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3>
+					<a href="<?php echo get_permalink(); ?>"><h3><?php echo $textInput = get_post_meta($post->ID, 'short_name', true); ?></h3>
 					<?php the_post_thumbnail( array( 138, 138 ) ) ?></a>
 				</div>
 				<?php

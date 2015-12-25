@@ -90,27 +90,65 @@ p, pre {
 }
 
 .header-nav{
+  height: 91px;
 }
 
 .site-nav {
   float: right;
-  margin: 40px 30px 10px 0;
+  padding: 20px;
 }
 
 .site-nav > li {
   display: inline-block;
-  width: 85px;
-  height: 25px;
   text-align: center;
 }
 
 .site-nav > li > a {
   display: block;
+  padding-top: 17px;
   font-family: $font-mon-r;
   text-transform: uppercase;
   font-size: .9em;
+  transition: none;
+  //change text to img sprite on hover
+  &:hover {
+    font-size: 0;
+  }
 }
 
+.About_button {
+  background-image: none;
+  width: 85px;
+  height: 22px;
+  &:hover {
+    background: url("../img/assets/sprites.png");
+    background-position: -306px -14px;
+  }
+}
+
+.Gallery_button {
+  background-image: none;
+  width: 104px;
+  height: 37px;
+  &:hover {
+    background: url("../img/assets/sprites.png");
+    background-position: -176px -256px ;
+  }
+}
+
+.Contact_button {
+  background-image: none;
+  width: 109px;
+  height: 22px;
+  &:hover {
+    background: url("../img/assets/sprites.png");
+    background-position: -24px -262px ;
+  }
+}
+
+.blog-pic {
+  margin-bottom: -12px;
+}
 
 //site main
 .site-main {
@@ -493,9 +531,7 @@ article:nth-of-type(n+2)::before{
 .fb-n,
 .ins-n,
 .ins-h,
-.About_button,
-.Gallery_button,
-.Contact_button {
+{
   background: url("../img/assets/sprites.png") no-repeat;
   display: block;
   transition: none;
@@ -604,24 +640,6 @@ article:nth-of-type(n+2)::before{
 .ins-n:hover, .ins-n:focus,{
   background-position: -151px -1px ;
   width: 22px;
-  height: 22px;
-}
-
-.About_button{
-  background-position: -306px -14px ;
-  width: 85px;
-  height: 22px;
-}
-
-.Gallery_button{
-  background-position: -176px -256px ;
-  width: 104px;
-  height: 37px;
-}
-
-.Contact_button{
-  background-position: -24px -262px ;
-  width: 109px;
   height: 22px;
 }
 

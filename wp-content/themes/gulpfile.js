@@ -46,7 +46,7 @@ var config = {
     //server: {
     //    baseDir: "./juliatheme"
     //},
-    //tunnel: true,
+    tunnel: true,
     //host: 'localhost',
 
     //port: 9000,

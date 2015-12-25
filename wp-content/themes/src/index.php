@@ -5,6 +5,12 @@
 		<!--article-->
 		<div class="row">
 			<div class="left-side col-md-10">
+
+				<?php
+				if ( is_category() ) : ?>
+					<h1><?php echo get_cat_name() ?></h1>
+				<?php endif; ?>
+
 			<?php
 
 			if ( have_posts() ) :
@@ -23,6 +29,7 @@
 
 			</div>
 			<?php get_sidebar(); ?>
+
 		</div>
 	</main>
 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="cubecamp.ru">
+
+    <title>cubecamp.ru - share btn</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-social.css">
+    <link rel="stylesheet" href="/static/css/fontello.css">
+
+    <!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+</head>
+<body>
+<div style="padding:20px;">
+    <h1>CubeCamp - share btn</h1>
+    <a href="http://www.cubecamp.ru" style="text-decoration:underline;">Вернуться обратно на КубКамп</a>
+    <br/><br/>
+    <h3>Examples</h3>
+    <p>
+        class <b>share-btn</b><br/>
+        attr <b>data-url</b> = <a href="http://www.cubecamp.ru">http://www.cubecamp.ru</a><br/>
+        attr <b>data-title</b> = КубКамп<br/>
+        attr <b>data-desc</b> = Журнал цифровых изобретений
+    </p>
+    <div class="share-btn" data-url="http://www.cubecamp.ru" data-title="КубКамп" data-desc="Журнал цифровых изобретений">
+        <a class="btn btn-social-icon btn-sm btn-vk" data-id="vk"><i class="ccon-vkontakte"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-facebook" data-id="fb"><i class="ccon-facebook"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-twitter" data-id="tw"><i class="ccon-twitter"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-google-plus" data-id="gp"><i class="ccon-google"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-linkedin" data-id="in"><i class="ccon-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-github" data-id="mail"><i class="ccon-mail"></i></a>
+    </div>
+
+    <br/>
+    <p>
+        class <b>share-btn</b><br/>
+        attr <b>data-url</b> = <a href="http://www.cubecamp.com">http://www.cubecamp.com</a><br/>
+    </p>
+    <div class="share-btn" data-url="http://www.cubecamp.com">
+        <a class="btn btn-social-icon btn-sm btn-vk" data-id="vk"><i class="ccon-vkontakte"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-facebook" data-id="fb"><i class="ccon-facebook"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-twitter" data-id="tw"><i class="ccon-twitter"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-google-plus" data-id="gp"><i class="ccon-google"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-linkedin" data-id="in"><i class="ccon-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-github" data-id="mail"><i class="ccon-mail"></i></a>
+    </div>
+
+    <br/>
+    <p>
+        class <b>share-btn</b><br/>
+        Use location.href
+    </p>
+    <div class="share-btn">
+        <a class="btn btn-social-icon btn-sm btn-vk" data-id="vk"><i class="ccon-vkontakte"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-facebook" data-id="fb"><i class="ccon-facebook"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-twitter" data-id="tw"><i class="ccon-twitter"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-google-plus" data-id="gp"><i class="ccon-google"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-linkedin" data-id="in"><i class="ccon-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-sm btn-github" data-id="mail"><i class="ccon-mail"></i></a>
+    </div>
+
+    <br/>
+    <h3>JS</h3>
+    <a href="share.js">share.js</a>
+
+    <h3>HTML</h3>
+<pre><code>&lt;div class="share-btn" data-url="http://www.cubecamp.ru" data-title="КубКамп" data-desc="Журнал цифровых изобретений"&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-vk" data-id="vk"&gt;&lt;i class="ccon-vkontakte"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-facebook" data-id="fb"&gt;&lt;i class="ccon-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-twitter" data-id="tw"&gt;&lt;i class="ccon-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-google-plus" data-id="gp"&gt;&lt;i class="ccon-google"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-linkedin" data-id="in"&gt;&lt;i class="ccon-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="btn btn-social-icon btn-sm btn-github" data-id="mail"&gt;&lt;i class="ccon-mail"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div></code></pre>
+
+    <script>
+        var cubeShare = {
+            title: 'CubeCamp.ru',
+            width: 600,
+            height: 400,
+
+            init: function() {
+                var share = document.querySelectorAll('.share-btn');
+                for(var i = 0, l = share.length; i < l; i++) {
+                    var url = share[i].getAttribute('data-url') || location.href, title = share[i].getAttribute('data-title') || '',
+                            desc = share[i].getAttribute('data-desc') || '', el = share[i].querySelectorAll('a');
+
+                    for(var a = 0, al = el.length; a < al; a++) {
+                        var id = el[a].getAttribute('data-id');
+                        if(id)
+                            this.addEventListener(el[a], 'click', {id: id, url: url, title: title, desc: desc});
+                    }
+                }
+            },
+
+            addEventListener: function(el, eventName, opt) {
+
+                var _this = this, handler = function() {
+                    _this.share(opt.id, opt.url, opt.title, opt.desc);
+                };
+
+                if(el.addEventListener) {
+                    el.addEventListener(eventName, handler);
+                } else {
+                    el.attachEvent('on' + eventName, function() {
+                        handler.call(el);
+                    });
+                }
+            },
+
+            share: function(id, url, title, desc) {
+                url = encodeURIComponent(url);
+                desc = encodeURIComponent(desc);
+                title = encodeURIComponent(title);
+
+                switch(id) {
+                    case 'fb':
+                        this.popupCenter('https://www.facebook.com/sharer/sharer.php?u=' + url, this.title, this.width, this.height);
+                        break;
+
+                    case 'vk':
+                        this.popupCenter('https://vk.com/share.php?url=' + url + '&description=' + title + '. ' + desc, this.title, this.width, this.height);
+                        break;
+
+                    case 'tw':
+                        var text = title || desc || '';
+                        if(title.length > 0 && desc.length > 0)
+                            text = title + ' - ' + desc;
+                        if(text.length > 0)
+                            text = '&text=' + text;
+
+                        this.popupCenter('https://twitter.com/intent/tweet?url=' + url + text, this.title, this.width, this.height);
+                        break;
+
+                    case 'gp':
+                        this.popupCenter('https://plus.google.com/share?url=' + url, this.title, this.width, this.height);
+                        break;
+
+                    case 'in':
+                        this.popupCenter('https://www.linkedin.com/shareArticle?mini=true&url=' + url, this.title, this.width, this.height);
+                        break;
+
+                    case 'mail':
+                        var text = title || desc || '';
+                        if(title.length > 0 && desc.length > 0)
+                            text = title + ' - ' + desc;
+                        if(text.length > 0)
+                            text = text + ' / ';
+                        if(title.length > 0)
+                            title = title + ' / ';
+
+                        var mail = 'mailto:?Subject=' + title + this.title + '&body=' + text + url;
+                        this.newTab(mail);
+                        break;
+
+                    default:
+                        break;
+                };
+            },
+
+            newTab: function(url) {
+                var win = window.open(url, '_blank');
+                win.focus();
+            },
+
+            popupCenter: function(url, title, w, h) {
+                var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
+                var dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
+
+                var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+                var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+                var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+                var top = ((height / 3) - (h / 3)) + dualScreenTop;
+
+                var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+                if (window.focus) {
+                    newWindow.focus();
+                }
+            }
+        };
+
+        cubeShare.init();
+
+        /*
+         $(document).ready(function(){
+         $('.share-btn a').on('click', function() {
+         var id = $(this).data('id');
+         if(id) {
+         var data = $(this).parent('.share-btn');
+         var url = data.data('url') || location.href, title = data.data('title') || '', desc = data.data('desc') || '';
+         cubeShare.share(id, url, title, desc);
+         }
+         });
+         });
+         */
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56269614-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

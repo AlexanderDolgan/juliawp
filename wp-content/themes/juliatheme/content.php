@@ -8,8 +8,9 @@
 		//other pages
 		else :
 			the_title( sprintf( '<h1 class="main-article-header-h1"><a href="%s">', esc_url( get_permalink() ) ), '</a></h1>' );
+
 		endif;
-		?>
+?>
 
 		<h3>
 			<?php
@@ -33,12 +34,17 @@
 
 	</section>
 	<footer class="main-article-footer">
-		<ul class="main-article-social-icon">
-			<li class="fb-like" data-href="https://www.facebook.com/juliakaptelova.photography" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></li>
-			<li>SHARE:</li>
-			<li><a href="//facebook.com" class="fb-n" target="_blank"></a></li>
-			<li><a href="//vk.com" class="vk-n" target="_blank"></a></li>
-		</ul>
+
+		<div class="share-btn" data-url="<?php echo get_permalink() ?>" data-title="Юлия Каптелова"
+		     data-desc="Блог фотографа Юлии Каптеловой">
+			<ul class="main-article-social-icon">
+				<div class="fb-like" data-href="http://www.juliakaptelova.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				<li>SHARE:</li>
+				<li><a class="fb-n" target="_blank" data-desc="Блог фотографа Юлии Каптеловой"
+				       data-title="Блог фотографа Юлии Каптеловой" data-id="fb"></a></li>
+				<li><a class="vk-n" target="_blank" data-desc="Блог фотографа Юлии Каптеловой"
+				       data-title="Блог фотографа Юлии Каптеловой" data-id="vk"></a></li>
+			</ul>
 
 		<?php if ( is_front_page() && is_home() ) {
 			// Default homepage ?>
@@ -48,7 +54,7 @@
 			//everything else
 		}
 		?>
-
+		</div>
 		<div class="clearfix"></div>
 		<div class="article-bot-border"></div>
 	</footer>

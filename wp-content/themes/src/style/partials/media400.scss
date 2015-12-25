@@ -7,6 +7,37 @@
     text-align: center;
     margin-top: 20px;
   }
+
+  .About_button {
+    background-image: none;
+    width: 85px;
+    height: 22px;
+    &:hover {
+      background: url("../img/assets/sprites.png");
+      background-position: -306px -14px;
+    }
+  }
+
+  .Gallery_button {
+    background-image: none;
+    width: 134px;
+    height: 37px;
+    &:hover {
+      background: url("../img/assets/sprites.png");
+      background-position: -176px -256px ;
+    }
+  }
+
+  .Contact_button {
+    background-image: none;
+    width: 109px;
+    height: 22px;
+    &:hover {
+      background: url("../img/assets/sprites.png");
+      background-position: -24px -262px ;
+    }
+  }
+
   .main-article {
     padding: 0 45px;
   }
@@ -19,7 +50,8 @@
 
   .right-bar-photo-per-in a:first-child,
   .right-bar-photo-in a:first-child, {
-    max-width: 170px;
+    max-width: 350px;
+    max-height: 350px;
     margin: 0 auto;
   }
 
