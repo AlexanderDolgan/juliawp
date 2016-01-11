@@ -40,9 +40,9 @@
 			<ul class="main-article-social-icon">
 				<div class="fb-like" data-href="http://www.juliakaptelova.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				<li>SHARE:</li>
-				<li><a class="fb-n" target="_blank" data-desc="Блог фотографа Юлии Каптеловой"
+				<li><a class="fb-n" data-desc="Блог фотографа Юлии Каптеловой"
 				       data-title="Блог фотографа Юлии Каптеловой" data-id="fb"></a></li>
-				<li><a class="vk-n" target="_blank" data-desc="Блог фотографа Юлии Каптеловой"
+				<li><a class="vk-n" data-desc="Блог фотографа Юлии Каптеловой"
 				       data-title="Блог фотографа Юлии Каптеловой" data-id="vk"></a></li>
 			</ul>
 

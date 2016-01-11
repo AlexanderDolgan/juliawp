@@ -8,7 +8,7 @@
 
 				<?php
 				if ( is_category() ) : ?>
-					<h1><?php echo get_cat_name() ?></h1>
+					<h1>Category - <?php echo get_cat_name() ?></h1>
 				<?php endif; ?>
 
 			<?php

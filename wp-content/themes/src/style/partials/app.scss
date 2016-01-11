@@ -151,12 +151,17 @@ p, pre {
 }
 
 //site main
+
+.left-side:first-child{
+  margin-top: 30px;
+}
+
 .site-main {
   margin-top: 20px;
 }
 
 .main-article {
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 .main-article pre a {
@@ -166,6 +171,10 @@ p, pre {
 .main-article a:hover,
 .main-article a:active, {
   color: darken($gold-color, 15);
+}
+
+.single_cat_name {
+  text-align: center;
 }
 
 .main-article-header {
@@ -211,7 +220,8 @@ article:nth-of-type(n+2)::before{
 
 .main-article-footer {
   font-family: $font-mon-r;
-  padding-top: 15px;
+  margin-top: -25px;
+  //padding-top: 15px;
   font-size: .9em;
 }
 
@@ -230,6 +240,7 @@ article:nth-of-type(n+2)::before{
   //background: url("../img/assets/fb-like.png") no-repeat;
   width: 100px;
   height: 20px;
+  filter: grayscale(100%);
 }
 
 .clearfix {
