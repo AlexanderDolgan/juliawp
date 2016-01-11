@@ -175,6 +175,7 @@ p, pre {
 
 .single_cat_name {
   text-align: center;
+  margin-bottom: 45px;
 }
 
 .main-article-header {
@@ -225,6 +226,10 @@ article:nth-of-type(n+2)::before{
   font-size: .9em;
 }
 
+#dsq-app1{
+  margin-bottom: 25px;
+}
+
 .main-article-social-icon {
   float: left;
 }
@@ -240,7 +245,13 @@ article:nth-of-type(n+2)::before{
   //background: url("../img/assets/fb-like.png") no-repeat;
   width: 100px;
   height: 20px;
+  opacity: .5;
   filter: grayscale(100%);
+
+}
+a[title="Pin it!"] {
+  filter: grayscale(100%);
+  opacity: .5;
 }
 
 .clearfix {
