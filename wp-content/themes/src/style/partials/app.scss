@@ -174,8 +174,12 @@ p, pre {
 }
 
 .single_cat_name {
-  text-align: center;
   margin-bottom: 45px;
+
+  text-align: center;
+  font-family: $font-mon-l;
+  font-weight: 100;
+  font-size: .95em;
 }
 
 .main-article-header {
@@ -205,8 +209,9 @@ article:nth-of-type(n+2)::before{
 
 .main-article-content pre {
   margin-top: 1.5em;
-  line-height: 1;
-  font-size: .95em;
+  line-height: 1.5;
+  font-size: 1.2em;
+  white-space: pre-wrap;
   word-wrap: break-word;
   text-align: justify;
 }
@@ -330,7 +335,7 @@ a[title="Pin it!"] {
 }
 
 .right-bar-photo-in img {
-  margin-top: 15px;
+
   overflow: hidden;
 }
 
@@ -389,6 +394,15 @@ a[title="Pin it!"] {
 .right-bar-search {
   display: block;
   margin: 30px auto 10px auto;
+}
+
+//search page empty result
+.empty-result h1 {
+  text-align: center;
+
+  font-family: $font-mon-r;
+  font-weight: 400;
+  line-height: 6;
 }
 
 .elem-1 {
@@ -612,7 +626,7 @@ a[title="Pin it!"] {
 }
 
 .follow-me{
-  background-position: -7px -82px ;
+  background-position: -7px -84px ;
   width: 178px;
   height: 47px;
 }
@@ -669,7 +683,10 @@ a[title="Pin it!"] {
 
 .comments {
   margin-top: 40px;
+  margin-bottom: 25px;
 }
 
-.tab-conversation, .tab-community, .user-menu, .notification-menu, .comment-count{
-  display: none;}
+.tab-conversation, .tab-community, .user-menu, .notification-menu, .comment-count {
+  display: none;
+}
+

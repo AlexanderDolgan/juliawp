@@ -212,6 +212,16 @@ function save_my_meta_fields($post_id) {
 }
 add_action('save_post', 'save_my_meta_fields'); // Запускаем функцию сохранения
 
+function wpb_imagelink_setup() {
+	$image_set = get_option( 'image_default_link_type' );
+
+	if ($image_set !== 'none') {
+		update_option('image_default_link_type', 'none');
+	}
+}
+add_action('admin_init', 'wpb_imagelink_setup', 10);
+
+
 //remove_action( 'wp_head', 'rsd_link' );
 //remove_action( 'wp_head', 'generator' );
 //remove_action( 'wp_head', 'wlwmanifest_link' );

@@ -14,7 +14,7 @@
 	<title><?php bloginfo( 'name' ); ?></title>
 
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> oncontextmenu="return false;">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

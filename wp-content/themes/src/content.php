@@ -15,7 +15,7 @@
 		<h3>
 			<?php
 			foreach ( ( get_the_category() ) as $category ) {
-				echo '<a href="' . get_category_link( $category->cat_ID ) . '" class="main-article-header-a">' . $category->cat_name . '</a> ';
+				echo '<a href="' . get_category_link( $category->cat_ID )  . '" class="main-article-header-a">' . $category->cat_name . ' | ' . '</a> ';
 			}
 			?>
 		</h3>
@@ -41,9 +41,9 @@
 				<div class="fb-like" data-href="http://www.juliakaptelova.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				<li>SHARE:</li>
 				<li><a class="fb-n" data-desc="Блог фотографа Юлии Каптеловой"
-				       data-title="Блог фотографа Юлии Каптеловой" data-id="fb"></a></li>
+					data-title="Блог фотографа Юлии Каптеловой" data-id="fb"></a></li>
 				<li><a class="vk-n" data-desc="Блог фотографа Юлии Каптеловой"
-				       data-title="Блог фотографа Юлии Каптеловой" data-id="vk"></a></li>
+					data-title="Блог фотографа Юлии Каптеловой" data-id="vk"></a></li>
 			</ul>
 
 		<?php if ( is_front_page() && is_home() ) {
