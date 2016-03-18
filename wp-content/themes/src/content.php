@@ -15,7 +15,7 @@
 		<h3>
 			<?php
 			foreach ( ( get_the_category() ) as $category ) {
-				echo '<a href="' . get_category_link( $category->cat_ID )  . '" class="main-article-header-a">' . $category->cat_name . ' | ' . '</a> ';
+				echo '<a href="' . get_category_link( $category->cat_ID )  . '" class="main-article-header-a">' . $category->cat_name . 'asd' . '</a> ';
 			}
 			?>
 		</h3>

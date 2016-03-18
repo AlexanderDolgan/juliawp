@@ -44,6 +44,7 @@ a:hover, a:focus {
 
 img {
   transition: all 0.5s ease;
+  //pointer-events: none;
 }
 
 h1, h2, h3 {
@@ -70,99 +71,113 @@ p, pre {
 }
 
 //site-header
+
+//
+//.logo {
+//  float: left;
+//  display: block;
+//  text-align: center;
+//}
+//
+//.header-nav{
+//  height: 91px;
+//}
+//
+//.site-nav {
+//  float: right;
+//  padding: 20px;
+//}
+//
+//.site-nav > li {
+//  display: inline-block;
+//  text-align: center;
+//}
+//
+//.site-nav > li > a {
+//  display: block;
+//  padding-top: 17px;
+//  font-family: $font-mon-r;
+//  text-transform: uppercase;
+//  font-size: .9em;
+//  transition: none;
+//  //change text to img sprite on hover
+//  &:hover {
+//    font-size: 0;
+//  }
+//}
+
+
 .site-header {
   height: 200px;
   padding-top: 10%;
 }
 
-.site-header::after {
-  content: "";
-  display: block;
-  border-top: 1px solid #ededed;
-  background: url("../img/assets/h-shadow.png") no-repeat 100% 100%;
-  height: 70px;
-}
 
-.logo {
-  float: left;
-  display: block;
-  text-align: center;
-}
-
-.header-nav{
-  height: 91px;
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .site-nav {
-  float: right;
-  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.site-nav > li {
-  display: inline-block;
+.site-nav li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-nav li a {
+  padding: 15px 31px;
   text-align: center;
-}
-
-.site-nav > li > a {
-  display: block;
-  padding-top: 17px;
-  font-family: $font-mon-r;
-  text-transform: uppercase;
-  font-size: .9em;
   transition: none;
-  //change text to img sprite on hover
-  &:hover {
-    font-size: 0;
-  }
 }
 
 .About_button {
   background-image: none;
-  width: 85px;
-  height: 22px;
   &:hover {
+    color: rgba(0,0,0,.01);
     background: url("../img/assets/sprites.png");
-    background-position: -306px -14px;
+    background-position: -300px -4px;
   }
 }
 
 .Gallery_button {
   background-image: none;
-  width: 104px;
-  height: 37px;
   &:hover {
+    color: rgba(0,0,0,.01);
     background: url("../img/assets/sprites.png");
-    background-position: -176px -256px ;
+    background-position: -174px -246px ;
   }
 }
 
 .Contact_button {
   background-image: none;
-  width: 109px;
-  height: 22px;
   &:hover {
+    color: rgba(0,0,0,.01);
     background: url("../img/assets/sprites.png");
-    background-position: -24px -262px ;
+    background-position: -24px -250px ;
   }
 }
 
-.blog-pic {
-  margin-bottom: -12px;
-}
 
 //site main
 
 .left-side:first-child{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .site-main {
   margin-top: 20px;
 }
 
-.main-article {
-  margin-top: -30px;
-}
 
 .main-article pre a {
   color: $gold-color;
@@ -210,7 +225,7 @@ article:nth-of-type(n+2)::before{
 .main-article-content pre {
   margin-top: 1.5em;
   line-height: 1.5;
-  font-size: 1.2em;
+  font-size: 1em;
   white-space: pre-wrap;
   word-wrap: break-word;
   text-align: justify;
@@ -369,10 +384,6 @@ a[title="Pin it!"] {
   background-position: 13px 6px;
 }
 
-.right-bar-photo-per-in img {
-  margin-top: 15px;
-}
-
 .right-bar-contact {
   display: block;
   margin: 30px 0 0 -20px;
@@ -394,6 +405,11 @@ a[title="Pin it!"] {
 .right-bar-search {
   display: block;
   margin: 30px auto 10px auto;
+}
+
+.pllexislider ul {
+  max-width: 200px;
+  margin: 15px auto; !important;
 }
 
 //search page empty result
@@ -629,6 +645,7 @@ a[title="Pin it!"] {
   background-position: -7px -84px ;
   width: 178px;
   height: 47px;
+  margin: 0 auto;
 }
 
 .search-img{
@@ -639,6 +656,7 @@ a[title="Pin it!"] {
 
 .Categories{
   background-position: -8px -33px ;
+  margin: 0 auto;
   width: 170px;
   height: 52px;
 }

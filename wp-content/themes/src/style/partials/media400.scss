@@ -1,43 +1,13 @@
-@media (max-width: 400px) {
-  .logo {
-    float: none;
+@media (min-width:769px) {
+  .header-nav .logo {
+    margin-right: auto;
   }
+}
+
+@media (max-width: 400px) {
   .site-nav {
-    float: none;
-    text-align: center;
     margin-top: 20px;
   }
-
-  .About_button {
-    background-image: none;
-    width: 85px;
-    height: 22px;
-    &:hover {
-      background: url("../img/assets/sprites.png");
-      background-position: -306px -14px;
-    }
-  }
-
-  .Gallery_button {
-    background-image: none;
-    width: 134px;
-    height: 37px;
-    &:hover {
-      background: url("../img/assets/sprites.png");
-      background-position: -176px -256px ;
-    }
-  }
-
-  .Contact_button {
-    background-image: none;
-    width: 109px;
-    height: 22px;
-    &:hover {
-      background: url("../img/assets/sprites.png");
-      background-position: -24px -262px ;
-    }
-  }
-
   .main-article {
     padding: 0 45px;
   }
