@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
 
   .site-nav {
     margin-top: 20px;
@@ -20,10 +20,20 @@
     padding: 0 15px;
   }
 
-  .main-article-liveacomment {
-    float: left;
-    clear: both;
-    line-height: 4;
+  .main-article-social-icon {
+    padding-top: 15px;
+  }
+
+  .main-article-readmore {
+    float: none;
+    width: 140px;
+    margin: 0 auto;
+
+  }
+
+  .main-article-content .main-article-liveacomment {
+    margin-left: 0;
+    float: right;
   }
 
   .right-bar-photo-per-in a:first-child,

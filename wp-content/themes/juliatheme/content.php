@@ -32,6 +32,15 @@
 
 			<div class="share-btn" data-url="<?php echo get_permalink() ?>" data-title="Юлия Каптелова"
 			     data-desc="Блог фотографа Юлии Каптеловой">
+				<?php if ( !is_single() ) {
+					// Default homepage ?>
+					<a href="<?php echo get_permalink(); ?>" class="main-article-readmore">READ MORE ></a>
+					<?php
+				} else {
+					//everything else
+				}
+				?>
+
 				<ul class="main-article-social-icon">
 					<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 					<li>SHARE:</li>
@@ -50,14 +59,7 @@
 						?>
 					</li>
 				</ul>
-				<?php if ( !is_single() ) {
-					// Default homepage ?>
-					<a href="<?php echo get_permalink(); ?>" class="main-article-readmore">READ MORE ></a>
-					<?php
-				} else {
-					//everything else
-				}
-				?>
+
 			</div>
 			<div class="clearfix"></div>
 			<div class="article-bot-border"></div>
