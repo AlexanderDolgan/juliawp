@@ -8,4 +8,4 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-window.ondragstart = function() { return false; }
+window.ondragstart = function() { return false; };

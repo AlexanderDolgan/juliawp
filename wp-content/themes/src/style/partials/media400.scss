@@ -5,11 +5,19 @@
 }
 
 @media (max-width: 400px) {
+
   .site-nav {
     margin-top: 20px;
   }
+
+  .site-nav li a {
+    padding: 15px 15px;
+    text-align: center;
+    transition: none;
+  }
+
   .main-article {
-    padding: 0 45px;
+    padding: 0 15px;
   }
 
   .main-article-liveacomment {
@@ -23,6 +31,10 @@
     max-width: 350px;
     max-height: 350px;
     margin: 0 auto;
+  }
+
+  .elem-2 {
+    width: 180px;
   }
 
   .archive-header {

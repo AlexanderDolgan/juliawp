@@ -4,7 +4,7 @@
   font-family: 'Montserrat-bold';
   src: url('../fonts/montserrat-bold.otf');
   font-family: 'Montserrat-light';
-  src: url('../fonts/montserrat-light.otf');
+  src: url('../fonts/Montserrat-Light.otf');
 }
 
 $font-mon-r: "Montserrat-regular", Helvetica, Sans-Serif;
@@ -70,43 +70,6 @@ p, pre {
   width: 77%;
 }
 
-//site-header
-
-//
-//.logo {
-//  float: left;
-//  display: block;
-//  text-align: center;
-//}
-//
-//.header-nav{
-//  height: 91px;
-//}
-//
-//.site-nav {
-//  float: right;
-//  padding: 20px;
-//}
-//
-//.site-nav > li {
-//  display: inline-block;
-//  text-align: center;
-//}
-//
-//.site-nav > li > a {
-//  display: block;
-//  padding-top: 17px;
-//  font-family: $font-mon-r;
-//  text-transform: uppercase;
-//  font-size: .9em;
-//  transition: none;
-//  //change text to img sprite on hover
-//  &:hover {
-//    font-size: 0;
-//  }
-//}
-
-
 .site-header {
   height: 200px;
   padding-top: 10%;
@@ -124,6 +87,10 @@ p, pre {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  font-family: $font-mon-r;
+
+  font-size: 13px;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
@@ -135,7 +102,7 @@ p, pre {
 }
 
 .site-nav li a {
-  padding: 15px 31px;
+  padding: 15px 25px;
   text-align: center;
   transition: none;
 }
@@ -217,9 +184,15 @@ article:nth-of-type(n+2)::before{
 
 .main-article-header-a {
   margin-top: .4em;
+  padding-right: 5px;
   font-size: 0.8em;
   font-weight: 400;
   color: $gold-color;
+  border-right: 1px solid $gold-color;
+}
+
+.main-article-header-a:last-child {
+  border-right: 0px;
 }
 
 .main-article-content pre {
@@ -239,9 +212,18 @@ article:nth-of-type(n+2)::before{
   font-size: 0;
 }
 
+.main-article-content a {
+  color: darken($gold-color, 15%);
+}
+
+.main-article-content a:hover,
+.main-article-content a:focus {
+  color: darken($gold-color, 25%);
+}
+
 .main-article-footer {
   font-family: $font-mon-r;
-  margin-top: -25px;
+  //margin-top: -25px;
   //padding-top: 15px;
   font-size: .9em;
 }
@@ -252,6 +234,7 @@ article:nth-of-type(n+2)::before{
 
 .main-article-social-icon {
   float: left;
+  padding-top: 5px;
 }
 
 .main-article-social-icon > li {
@@ -265,11 +248,10 @@ article:nth-of-type(n+2)::before{
   //background: url("../img/assets/fb-like.png") no-repeat;
   width: 100px;
   height: 20px;
-  opacity: .5;
   filter: grayscale(100%);
 
 }
-a[title="Pin it!"] {
+a[data-pin-log="button_pinit_floating"] {
   filter: grayscale(100%);
   opacity: .5;
 }
@@ -280,8 +262,15 @@ a[title="Pin it!"] {
 }
 
 .main-article-liveacomment {
+  margin-right: 20px;
+}
+
+.main-article-readmore {
+  display: block;
   float: right;
-  margin-top: 4px;
+  padding: 11px 30px;
+
+  background: url("../img/assets/bg_btn.jpg") no-repeat;
 }
 
 .article-bot-border {
@@ -333,6 +322,10 @@ a[title="Pin it!"] {
   margin-top: 30px;
 }
 
+.right-bar-social-links {
+  margin-top: 10px;
+}
+
 .right-bar-social-links > li {
   display: inline-block;
   margin-left: 5px;
@@ -376,7 +369,6 @@ a[title="Pin it!"] {
 
 .right-bar-photo-per-in a:first-child {
   padding-left: 20px;
-  padding-bottom: 15px;
 }
 
 .elem-2 {
@@ -409,7 +401,7 @@ a[title="Pin it!"] {
 
 .pllexislider ul {
   max-width: 200px;
-  margin: 15px auto; !important;
+  margin: 15px auto;
 }
 
 //search page empty result
@@ -447,7 +439,7 @@ a[title="Pin it!"] {
 }
 
 .also-like-header {
-  margin-top: -45px;
+  //margin-top: -45px;
   font-family: $font-mon-r;
   color: $gold-color;
   font-weight: 400;
@@ -700,7 +692,7 @@ a[title="Pin it!"] {
 // comments on single post page
 
 .comments {
-  margin-top: 40px;
+  margin-top: -40px;
   margin-bottom: 25px;
 }
 
@@ -708,3 +700,21 @@ a[title="Pin it!"] {
   display: none;
 }
 
+
+span[class^='PIN_'] {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+span[class^='PIN_']::after {
+  content: '';
+  display: block;
+  background: url("../img/assets/pin.png") no-repeat center;
+  width:75px;
+  height:75px;
+}
+
+.right-bar span[class^='PIN_']::after {
+  content: '';
+  display: none;
+}
